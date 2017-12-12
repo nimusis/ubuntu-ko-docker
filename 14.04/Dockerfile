@@ -6,6 +6,7 @@ RUN apt-get update && \
     apt-get clean all
 
 RUN apt-get install -y language-pack-ko
+RUN apt-get install tzdata
 			 
 # set locale ko_KR
 RUN locale-gen ko_KR.UTF-8
